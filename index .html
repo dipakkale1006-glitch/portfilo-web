@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dipak kale  - Advanced Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Split Screen Layout -->
+    <div class="split-screen">
+        <!-- Left Sidebar (Fixed) -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <img src="assets\profile.png" alt="dipak kale" class="profile-photo">
+                <h1 class="name">Dipak Kale</h1>
+                <h2 class="title">Full-Stack Developer</h2>
+                <p class="intro">Passionate developer specializing in modern web technologies, AI, and scalable solutions. Building the future, one line of code at a time.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-icon">GitHub</a>
+                    <a href="#" target="_blank" class="social-icon">LinkedIn</a>
+                    <a href="#" target="_blank" class="social-icon">Twitter</a>
+                </div>
+                <a href="#" class="btn resume-btn" download>Download Resume</a>
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+            </div>
+        </aside>
+
+        <!-- Right Content Area (Scrollable) -->
+        <main class="main-content">
+            <!-- About Me Section -->
+            <section id="about" class="section about">
+                <h2 class="section-title">About Me</h2>
+                <p>I'm a full-stack developer (learning phase) with midium level of experience in building robust web applications using React, Node.js, and cloud platforms like AWS. I thrive on solving complex problems and contributing to open-source projects.</p>
+                <p>In my free time, I explore machine learning, write technical blogs, and mentor aspiring developers.</p>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="1">
+                        <img src="https://via.placeholder.com/400x250?text=Project+1" alt="Project 1">
+                        <h3>math-tug-war</h3>
+                        <p>for childran basic math game ,using html,css,js.</p>
+                    </div>
+                    <div class="project-card" data-project="2">
+                        <img src="https://via.placeholder.com/400x250?text=Project+2" alt="Project 2">
+                        <h3>AI-Powered Chatbot</h3>
+                        <p>An NLP-based chatbot using Python and TensorFlow for customer support.</p>
+                    </div>
+                    <div class="project-card" data-project="3">
+                        <img src="https://via.placeholder.com/400x250?text=Project+3" alt="Project 3">
+                        <h3>Portfolio Website</h3>
+                        <p>This responsive portfolio showcasing modern web design and animations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Detail Section (Hidden by default) -->
+            <section id="project-detail" class="section project-detail hidden">
+                <button id="back-btn" class="btn back-btn">← Back to Projects</button>
+                <div id="project-content">
+                    <!-- Content populated by JS -->
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <h2 class="section-title">Contact Me</h2>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+
+            <!-- More Section (Skills, Achievements, Services) -->
+            <section id="more" class="section more">
+                <h2 class="section-title">More</h2>
+                <div class="more-content">
+                    <!-- Skills -->
+                    <div class="subsection">
+                        <h3>Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <span>React</span>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <span>Node.js</span>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill">
+                                <span>Python</span>
+                                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Achievements -->
+                    <div class="subsection">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>Certification in python,C++,java</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div class="subsection">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Web Development (Full-Stack)</li>
+                            <li>AI/ML Consulting</li>
+                            <li>Code Reviews & Mentoring</li>
+                        </ul>
+                    </div>
+                    <!-- Services -->
+                    <div class="subsection">
+                        <h3>contect</h3>
+                        <ul>
+                            <li>dipakkale1006@gmail.com</li>
+                            <li>phone:- 9226295787</li>
+                        </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
